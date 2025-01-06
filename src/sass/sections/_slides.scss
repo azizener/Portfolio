@@ -1,0 +1,103 @@
+// Variables for consistent styling
+$primary-color: #007bff;
+$secondary-color: #ccc;
+$button-bg: #f7f7f7;
+$button-hover-bg: #e0e0e0;
+$dot-size: 12px;
+
+// Slideshow container
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .slide {
+    display: none;
+    width: 100%;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .slide:first-child {
+    display: block; // Show the first slide by default
+  }
+
+  // Navigation buttons
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $button-bg;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $button-hover-bg;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      border: solid $primary-color;
+      border-width: 0 3px 3px 0;
+      padding: 6px;
+    }
+  }
+
+  .prev {
+    left: 10px;
+
+    &::before {
+      transform: rotate(135deg);
+    }
+  }
+
+  .next {
+    right: 10px;
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+
+  // Dots for pagination
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    .dot {
+      width: $dot-size;
+      height: $dot-size;
+      margin: 0 5px;
+      background-color: $secondary-color;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &.active {
+        background-color: $primary-color;
+      }
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
