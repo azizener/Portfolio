@@ -2,7 +2,7 @@
   "name": "simplefolio",
   "version": "1.0.1",
   "private": true,
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "description": "Aziz Portfolio",
   "source": "index.html",
   "scripts": {
     "start": "parcel",
@@ -12,12 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/azizener/Portfolio"
   },
-  "author": "Jacobo Martinez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/azizener/Portfolio/issues"
-  },
-  "homepage": "https://github.com/azizener/Portfolio#readme",
+  "author": "SherlockAziz",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.13.3",
