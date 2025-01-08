@@ -4,10 +4,9 @@
   "private": true,
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "source": "index.html",
-"scripts": {
-    "build": "npm run build",
-    "install": "npm install",
-    "start": "npm run start"
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
